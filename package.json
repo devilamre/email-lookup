@@ -24,8 +24,8 @@
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "devilamre",
+  "license": "MIT",
   "type": "module",
   "dependencies": {
     "@types/jest": "^26.0.19",
