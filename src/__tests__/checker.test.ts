@@ -15,46 +15,46 @@ describe('Testing resolveExchangeServers method', () => {
   });
 });
 
-describe('Testing verify method', () => {
-  test('Email should exist', async (done) => {
-    try {
-      const res = await verify(DefaultConfig);
-      expect(res.success).toBe(true);
-      done();
-    } catch (error) {
-      done(error);
-    }
-  });
+// describe('Testing verify method', () => {
+//   test('Email should exist', async (done) => {
+//     try {
+//       const res = await verify(DefaultConfig);
+//       expect(res.success).toBe(true);
+//       done();
+//     } catch (error) {
+//       done(error);
+//     }
+//   });
 
-  test('Email should NOT exist', async (done) => {
-    try {
-      const res = await verify({ ...DefaultConfig, email: EMAIL_NOT_EXIST });
-      expect(res.success).toBe(false);
-      done();
-    } catch (error) {
-      done(error);
-    }
-  });
-});
+//   test('Email should NOT exist', async (done) => {
+//     try {
+//       const res = await verify({ ...DefaultConfig, email: EMAIL_NOT_EXIST });
+//       expect(res.success).toBe(false);
+//       done();
+//     } catch (error) {
+//       done(error);
+//     }
+//   });
+// });
 
-describe('Testing verifyExistance method', () => {
-  test('Email should exist', async (done) => {
-    try {
-      const res = await verifyExistence(DefaultConfig.email);
-      expect(res.success).toBe(true);
-      done();
-    } catch (error) {
-      done(error);
-    }
-  });
+// describe('Testing verifyExistance method', () => {
+//   test('Email should exist', async (done) => {
+//     try {
+//       const res = await verifyExistence(DefaultConfig.email);
+//       expect(res.success).toBe(true);
+//       done();
+//     } catch (error) {
+//       done(error);
+//     }
+//   });
 
-  test('Email should NOT exist', async (done) => {
-    try {
-      const res = await verifyExistence(EMAIL_NOT_EXIST);
-      expect(res.success).toBe(false);
-      done();
-    } catch (error) {
-      done(error);
-    }
-  });
-});
+//   test('Email should NOT exist', async (done) => {
+//     try {
+//       const res = await verifyExistence(EMAIL_NOT_EXIST);
+//       expect(res.success).toBe(false);
+//       done();
+//     } catch (error) {
+//       done(error);
+//     }
+//   });
+// });
