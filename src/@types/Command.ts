@@ -1,9 +1,8 @@
-
 export interface Command {
-    cmd: string,
-    executed: boolean
+  cmd: string;
+  executed: boolean;
 }
 
 export interface CommandState {
-    current: Command | null
+  current: Command | null;
 }

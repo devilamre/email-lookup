@@ -1,7 +1,6 @@
-
 export interface Response {
-    success: boolean,
-    error: string
+  success: boolean;
+  error: string;
 }
 
 // 200	(nonstandard success response, see rfc876)
