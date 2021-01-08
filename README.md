@@ -14,7 +14,7 @@ Best tool online for email checking using Simple Mail Transfer Protocol (SMTP) b
 const { verifyExistence } = require('email-lookup');
 
 (async () => {
-  const response = await verifyexistence('ermalkaraboja@gmail.com');
+  const response = await verifyexistence('devilamre@gmail.com');
   console.log(response);
 })();
 ```
@@ -25,7 +25,7 @@ const { verifyExistence } = require('email-lookup');
 import { verifyExistence } from 'email-lookup';
 
 (async () => {
-  const response = await verifyexistence('ermalkaraboja@gmail.com');
+  const response = await verifyexistence('devilamre@gmail.com');
   console.log(response);
 })();
 ```
