@@ -8,14 +8,3 @@ before_script:
 
 script:
   - yarn test
-
-after_success:
-  - npm version patch
-
-deploy:
-  - provider: npm
-    skip_cleanup: true
-    email: 'devilamre@gmail.com'
-    api_key: '9657b1be-cef9-4102-9aaa-4d235aa19c2e'
-    on:
-      tags: true
