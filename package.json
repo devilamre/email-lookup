@@ -1,6 +1,6 @@
 {
   "name": "email-lookup",
-  "version": "1.0.2-0",
+  "version": "1.0.2",
   "description": "Best tool online for email checking using Simple Mail Transfer Protocol (SMTP) built in Typescript",
   "keywords": [
     "email",
